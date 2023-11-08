@@ -12,16 +12,23 @@ var numberArr = ["0","1","2","3","4","5","6","7","8","9"];
 function generatePassword () {
   console.log("You clicked the generate password button");
 
-
-
-  return "Generated Password Placeholder";
+    var password = " ";
+    for (var i = 0; i < characterLength; i++) {
+      var randomIndex = Math.floor(Math.random() * choiceArr.length) ;
+      password = password + choiceArr[randomIndex];
+    }
+  return password;
 }
 // Write password to the #password input
 function writePassword() {
+  var correctPrompts = generatePrompt();  //returns true or false
+
+  if (correctPrompts) {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+  }
 
 }
 
