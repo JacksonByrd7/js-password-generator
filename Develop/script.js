@@ -11,7 +11,7 @@ var numberArr = ["0","1","2","3","4","5","6","7","8","9"];
 
 function generatePassword () {
   console.log("You clicked the generate password button");
-
+  //this loop generates password based on prompts
     var password = " ";
     for (var i = 0; i < characterLength; i++) {
       var randomIndex = Math.floor(Math.random() * choiceArr.length) ;
