@@ -23,3 +23,8 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
+https://github.com/JacksonByrd7/js-password-generator
+
+https://jacksonbyrd7.github.io/js-password-generator/
+
+![Alt text](image.png)
